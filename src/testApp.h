@@ -20,13 +20,17 @@ public:
     
     void onMessage( Spacebrew::Message& m );
    
-    bool                writing;
-    string              s;
+    
+    
+    //These are the vectors that will store the strings
     vector<string>      ryanWritten;
     vector<string>      omerWritten;
+    //This is the string you're writing into
+    string              s;
+    //These are the logic barriers
     bool                omerReceived;
     bool                ryanReceived;
-    Chatting            chat;
+    bool                writing;
     bool                hasRun;
 
     
